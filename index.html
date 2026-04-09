@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jahidul Islam | Accounting Executive Portfolio</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f8fe;
+            color: #1a2c3e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #145c8a, #2b7aa2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #1e4a6e;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #0f7bc2;
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f6fd 0%, #ffffff 100%);
+            padding: 3rem 0 4rem;
+            border-bottom: 1px solid #e2eff8;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(26,93,143,0.03) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            flex: 1.5;
+        }
+
+        .hero-badge {
+            background: #1a5d8f10;
+            color: #1a5d8f;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid #1a5d8f20;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #0a2f44;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-content h1 span {
+            color: #1a5d8f;
+            border-bottom: 3px solid #1a5d8f;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2b6a9f;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-title i {
+            color: #1a5d8f;
+            font-size: 0.9rem;
+        }
+
+        .hero-desc {
+            color: #2c4a6e;
+            max-width: 550px;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        /* Stats / Highlight Cards */
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .stat-icon {
+            width: 44px;
+            height: 44px;
+            background: #e8f0fe;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a5d8f;
+            font-size: 1.2rem;
+        }
+        
+        .stat-text {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0a2f44;
+        }
+        
+        .stat-text small {
+            font-weight: 400;
+            font-size: 0.75rem;
+            color: #5c7c9e;
+            display: block;
+        }
+
+        /* Buttons - Made smaller to fit 4 in a line */
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #1a5d8f;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.25s;
+            box-shadow: 0 2px 6px rgba(26,93,143,0.15);
+            white-space: nowrap;
+        }
+
+        .btn-primary:hover {
+            background: #0f4570;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(26,93,143,0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid #1a5d8f;
+            color: #1a5d8f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.25s;
+            white-space: nowrap;
+        }
+
+        .btn-outline:hover {
+            background: #e1f0fa;
+            border-color: #0f4570;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-secondary {
+            border-color: #cde1ed;
+            color: #4a627a;
+        }
+        
+        .btn-outline-secondary:hover {
+            background: #f0f5fa;
+            border-color: #1a5d8f;
+            color: #1a5d8f;
+        }
+
+        /* Picture Card */
+        .hero-photo-card {
+            flex: 1;
+            background: white;
+            border-radius: 2rem;
+            padding: 1.2rem;
+            box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            border: 1px solid #ffffff;
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-frame {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #f0f5fa;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #e2edf5;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 1.3rem;
+        }
+
+        .photo-caption {
+            margin-top: 12px;
+            font-size: 0.75rem;
+            color: #5c7c9e;
+            font-weight: 500;
+            background: #eef4f9;
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 30px;
+        }
+
+        .hero-contact-info {
+            margin-top: 1rem;
+            text-align: left;
+            padding-top: 0.8rem;
+            border-top: 1px solid #e2edf5;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .hero-contact-info p {
+            margin: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            color: #2c4a6e;
+        }
+
+        .hero-contact-info i {
+            width: 26px;
+            color: #1a6eb0;
+            font-size: 0.9rem;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0a2f44;
+            margin-bottom: 2rem;
+            border-left: 5px solid #1f80c0;
+            padding-left: 1rem;
+        }
+
+        /* Experience Cards */
+        .exp-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.6rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e6f0f7;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.8rem;
+            align-items: baseline;
+        }
+
+        .exp-role {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #175d86;
+        }
+
+        .exp-date {
+            font-size: 0.8rem;
+            background: #eef3f8;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1f628b;
+            font-weight: 500;
+        }
+
+        .exp-company {
+            font-weight: 600;
+            color: #2c6c9e;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+
+        .achievement-badge {
+            background: #e0f0e8;
+            color: #1c6e4b;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.3rem 0 0.9rem;
+        }
+
+        .exp-list {
+            list-style: none;
+            margin-top: 0.6rem;
+        }
+
+        .exp-list li {
+            margin-bottom: 0.55rem;
+            display: flex;
+            gap: 12px;
+            font-size: 0.92rem;
+        }
+
+        .exp-list li i {
+            color: #1f80c0;
+            margin-top: 0.2rem;
+            font-size: 0.8rem;
+            width: 18px;
+        }
+
+        /* Projects Carousel */
+        .projects-carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 50px;
+        }
+
+        .carousel-wrapper {
+            overflow: hidden;
+            border-radius: 1.5rem;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+            gap: 1.8rem;
+        }
+
+        .project-card {
+            flex: 0 0 calc(50% - 0.9rem);
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.6rem;
+            border: 1px solid #e6f0f7;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 1px solid #cde1ed;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-btn:hover {
+            background: #1a5d8f;
+            color: white;
+            border-color: #1a5d8f;
+        }
+
+        .carousel-btn.prev {
+            left: 0;
+        }
+
+        .carousel-btn.next {
+            right: 0;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 1.8rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #cde1ed;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .dot.active {
+            width: 28px;
+            border-radius: 10px;
+            background: #1a5d8f;
+        }
+
+        .project-icon {
+            width: 50px;
+            height: 50px;
+            background: #e8f0fe;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-icon i {
+            font-size: 1.6rem;
+            color: #1a5d8f;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a2f44;
+            margin-bottom: 0.6rem;
+        }
+
+        .project-desc {
+            color: #4a627a;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tag {
+            background: #eef2f8;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #1f5680;
+        }
+
+        .project-list {
+            list-style: none;
+            margin: 0.6rem 0;
+        }
+
+        .project-list li {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .project-list li i {
+            color: #1f80c0;
+            font-size: 0.65rem;
+            margin-top: 0.2rem;
+        }
+
+        /* Screenshot Gallery */
+        .screenshot-gallery {
+            margin: 1rem 0;
+        }
+
+        .gallery-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #5c7c9e;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .gallery-images {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #e2edf5;
+            transition: all 0.2s;
+        }
+
+        .gallery-thumb:hover {
+            border-color: #1a5d8f;
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-project {
+            background: transparent;
+            border: 1.5px solid #1a5d8f;
+            color: #1a5d8f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.25s;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+
+        .btn-project:hover {
+            background: #1a5d8f;
+            color: white;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .skill-cat {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border: 1px solid #e2edf5;
+        }
+
+        .skill-cat h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            color: #1a5d8f;
+            border-bottom: 2px solid #e2edf5;
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eef2f8;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1f5680;
+        }
+
+        /* Education */
+        .edu-item {
+            background: white;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            border-left: 4px solid #2b7ba8;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .edu-detail {
+            color: #4a627a;
+            font-size: 0.9rem;
+        }
+
+        .certs-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .cert-card {
+            background: #ffffffea;
+            border-radius: 40px;
+            padding: 0.45rem 1.2rem;
+            border: 1px solid #cde1ed;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        footer {
+            background: #0e2a3b;
+            color: #ccdee9;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .footer-links a {
+            color: #b9d9f0;
+            margin: 0 0.8rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 900px) {
+            .project-card {
+                flex: 0 0 100%;
+            }
+            .hero-stats {
+                justify-content: space-between;
+            }
+        }
+
+        @media (max-width: 780px) {
+            .nav-flex {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .hero-grid {
+                flex-direction: column-reverse;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .image-frame {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .projects-carousel-container {
+                padding: 0 35px;
+            }
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Small screens - makes buttons even smaller to fit */
+        @media (max-width: 550px) {
+            .contact-buttons {
+                gap: 0.6rem;
+            }
+            
+            .btn-primary, .btn-outline {
+                padding: 0.4rem 0.9rem;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <h1>Jahidul Islam</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-chart-line"></i> Open for Finance & Accounting Roles
+                </div>
+                <h1>Hi, I'm <span>Jahidul Islam</span><br>Accounting Executive</h1>
+                <div class="hero-title">
+                    <i class="fas fa-check-circle"></i> Multi-Currency Accounting & Financial Automation Expert
+                </div>
+                <p class="hero-desc">I help businesses streamline financial operations, automate reconciliations, and turn complex transactional data into clear, actionable insights. Specialized in import/export accounting and Excel-based reporting systems.</p>
+                
+                <!-- Stats with Icons (Fixed) -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-file-excel"></i></div>
+                        <div class="stat-text">5+ <small>Excel Systems Built</small></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                        <div class="stat-text">USD • CNY • BDT <small>Multi-Currency Expert</small></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-text">3.5M+ BDT <small>Daily Transaction Volume</small></div>
+                    </div>
+                </div>
+                
+                <!-- 4 Buttons - Email Me, LinkedIn, View Projects, Download CV -->
+                <div class="contact-buttons">
+                    <a href="mailto:jahidul.mba.acc@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/jahidulislam-accounting" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#projects" class="btn-outline btn-outline-secondary"><i class="fas fa-folder-open"></i> View Projects</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1S8B8UfNzCMrpEX22KhMOkJcb-chBghXm" class="btn-outline"><i class="fas fa-file-pdf"></i> Download CV</a>
+                </div>
+            </div>
+            
+            <!-- Professional Photo Card -->
+            <div class="hero-photo-card">
+                <div class="image-frame">
+                    <!-- REPLACE THIS WITH YOUR ACTUAL PHOTO PATH -->
+                    <img class="profile-img" src="https://placehold.co/600x600/1a5d8f/ffffff?text=Your+Photo" alt="Jahidul Islam - Accounting Executive">
+                </div>
+                <div class="photo-caption">
+                    <i class="fas fa-user-check"></i> Accounting Professional
+                </div>
+                <div class="hero-contact-info">
+                    <p><i class="fas fa-phone-alt"></i> +8801948-536831</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dhanmondi, Bangladesh</p>
+                    <p><i class="fas fa-envelope"></i> jahidul.mba.acc@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="exp-card">
+                <div class="exp-header">
+                    <span class="exp-role">Accounting Executive</span>
+                    <span class="exp-date">Oct 2025 – Present</span>
+                </div>
+                <div class="exp-company">BanglaDrop (Sister Concern of Steadfast Courier Ltd.) – Dhaka</div>
+                <div class="achievement-badge"><i class="fas fa-trophy"></i> Internal transfer: high-performance & complex accounting operations</div>
+                <ul class="exp-list">
+                    <li><i class="fas fa-check-circle"></i> Manage 6–7 import shipments/month: supplier payments, freight & cost allocation.</li>
+                    <li><i class="fas fa-check-circle"></i> Process multi-currency (USD & CNY) supplier payments, freight settlements, import expenses.</li>
+                    <li><i class="fas fa-check-circle"></i> Daily transactions BDT 500k – 3.5M with accurate posting & ledger integrity.</li>
+                    <li><i class="fas fa-check-circle"></i> Monthly reconciliation of 6 channels: Dutch-Bangla Bank, City Bank, Bank of China, Zhejiang Chouzhou Commercial Bank, bKash & Nagad.</li>
+                    <li><i class="fas fa-check-circle"></i> Shipment-wise cost sheets: freight, duty & logistics cost allocation before invoicing.</li>
+                    <li><i class="fas fa-check-circle"></i> Support import banking: TT payments and LC documentation.</li>
+                    <li><i class="fas fa-check-circle"></i> Prepare monthly financial summaries & internal reports under strict deadlines.</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-header">
+                    <span class="exp-role">Junior Executive, Accounts</span>
+                    <span class="exp-date">Sep 2025 – Oct 2025</span>
+                </div>
+                <div class="exp-company">Steadfast Courier Ltd. – Dhaka</div>
+                <ul class="exp-list">
+                    <li><i class="fas fa-check-circle"></i> Supported day-to-day accounting in fast-paced courier environment.</li>
+                    <li><i class="fas fa-check-circle"></i> Entered payment, expense, and employee loan transactions from control sheets to internal ERP.</li>
+                    <li><i class="fas fa-check-circle"></i> Ensured documentation accuracy & high-volume data integrity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-carousel-container">
+                <div class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="project-title">Sales & Profit Analysis System (RMB-Based)</h3>
+                            <p class="project-desc">Excel-based system to track multi-currency transactions, calculate profit margins, and analyze salesperson performance based on client payments and RMB settlements.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Profit Calculation</span>
+                                <span class="tech-tag">Rate Analysis</span>
+                                <span class="tech-tag">Performance Reporting</span>
+                            </div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Tracked client payments (BDT) and supplier payments (RMB) across multiple transactions</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated purchase rate, selling rate, and profit for each transaction</li>
+                                <li><i class="fas fa-check-circle"></i> Managed multi-currency conversion and ensured accurate financial reconciliation</li>
+                                <li><i class="fas fa-check-circle"></i> Generated salesperson-wise performance reports using summarized data</li>
+                                <li><i class="fas fa-check-circle"></i> Provided insights on revenue, cost, and profitability for business decision-making</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS1" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS2" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS3" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1mkBY40_TznqT4L7u9u2N_CEDTN6IxbtCRjbEgYzY1Rc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
+                        </div>
+
+                        <!-- Project 2-->
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3 class="project-title">Multi-Currency Vendor Billing & Reconciliation</h3>
+                            <p class="project-desc">Excel-based system to manage vendor invoices, perform multi-currency conversions, and ensure accurate reconciliation of payments across international transactions.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Payment Matching</span>
+                                <span class="tech-tag">Exchange Handling</span>
+                                <span class="tech-tag">Balance Tracking</span>
+                            </div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Processed vendor invoices in USD and RMB with accurate conversion into BDT</li>
+                                <li><i class="fas fa-check-circle"></i> Managed cross-currency payments including RMB settlements against vendor bills</li>
+                                <li><i class="fas fa-check-circle"></i> Tracked partial, over, and under payments for each invoice</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated real-time outstanding balances through reconciliation of billed vs paid amounts</li>
+                                <li><i class="fas fa-check-circle"></i> Maintained structured records for vendor liability tracking and payment monitoring</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS1" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS2" class="gallery-thumb" alt="Screenshot 2">
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1ICMe1abg0HQBMGs9bF4iCvK00ykFzM6zwBn0tF55ipc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="project-title">Payroll & Attendance Management System</h3>
+                            <p class="project-desc">Excel-based system to process multi-company attendance data, generate accurate summaries, and automate payroll calculations for company-specific employees.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Attendance Processing</span>
+                                <span class="tech-tag">Salary Structuring</span>
+                                <span class="tech-tag">Employee Records</span>
+                            </div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Filtered raw attendance data to extract company-specific employee records</li>
+                                <li><i class="fas fa-check-circle"></i> Used Pivot Tables to summarize attendance based on employee ID</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated Present, Absent, Leave, Holiday, and Actual Working Days</li>
+                                <li><i class="fas fa-check-circle"></i> Developed individual salary sheets including basic, overtime, advances, and deductions</li>
+                                <li><i class="fas fa-check-circle"></i> Generated accurate payroll based on attendance data and company policies</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS1" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS2" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS3" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1BLYT8Oh89YGexpHsn19JYqfUGlBMj01_blh8ZMgM2Wc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h3 class="project-title">Inventory & Stock Management System</h3>
+                            <p class="project-desc">Excel-based system to track inventory movement, monitor stock levels, and maintain accurate records of product purchases and issues.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Stock Monitoring</span>
+                                <span class="tech-tag">Item Movement</span>
+                                <span class="tech-tag">Reorder Alerts</span>
+                            </div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Recorded product purchases and issues with detailed transaction tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Maintained structured logs of incoming and outgoing inventory</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated real-time stock balances using automated formulas</li>
+                                <li><i class="fas fa-check-circle"></i> Implemented reorder level monitoring to identify low stock items</li>
+                                <li><i class="fas fa-check-circle"></i> Improved inventory control through organized and trackable data management</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS1" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS2" class="gallery-thumb" alt="Screenshot 2">
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1-6cAo0xhKKUAkKxktmz84TnMR8Ejf1dkh4RfRJF7u4A/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="project-title">Client Billing & Shipment Analysis System</h3>
+                            <p class="project-desc">Excel-based system to track shipment details, manage client-wise billing, and generate structured financial summaries across multiple orders.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Shipment Records</span>
+                                <span class="tech-tag">Client Billing</span>
+                                <span class="tech-tag">Order Summary</span>
+                            </div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Monitored shipment data including tracking number, item type, weight (kg), and CBM</li>
+                                <li><i class="fas fa-check-circle"></i> Managed client-wise product distribution and shipment records</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated billing based on rate, quantity, and shipment details</li>
+                                <li><i class="fas fa-check-circle"></i> Generated client-wise total amounts and overall financial summary</li>
+                                <li><i class="fas fa-check-circle"></i> Structured operational and financial data to support reporting and decision-making</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS1" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS2" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="https://placehold.co/70x70/eef3fc/5c7c9e?text=SS3" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1bU4lSAVvu_YGQd33YiRXL3FSIMDT-G9tDpbejDQxjEg/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2 class="section-title">Core Skills & Technical Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <h3><i class="fas fa-book-open"></i> Accounting & Finance</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Bookkeeping & Ledger</span>
+                        <span class="skill-tag">Voucher posting & verification</span>
+                        <span class="skill-tag">Bank & MFS reconciliation</span>
+                        <span class="skill-tag">Payroll support</span>
+                        <span class="skill-tag">Financial Reporting</span>
+                        <span class="skill-tag">Multi-Currency Accounting</span>
+                        <span class="skill-tag">Shipment cost allocation</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h3><i class="fas fa-laptop"></i> Software & Automation</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">ZohoBooks</span>
+                        <span class="skill-tag">Tally Prime</span>
+                        <span class="skill-tag">QuickBooks Online</span>
+                        <span class="skill-tag">Advanced Excel (Automation)</span>
+                        <span class="skill-tag">ERP transaction entry</span>
+                        <span class="skill-tag">Google Sheets (cost/stock)</span>
+                        <span class="skill-tag">Reporting Dashboards</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h3><i class="fas fa-chart-simple"></i> Operational Strengths</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Internal Controls</span>
+                        <span class="skill-tag">Audit readiness</span>
+                        <span class="skill-tag">LC & TT Documentation</span>
+                        <span class="skill-tag">Reconciliation expert</span>
+                        <span class="skill-tag">Cross-border payments</span>
+                        <span class="skill-tag">Freight & duty allocation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-degree">MBA in Accounting</div>
+                    <div class="edu-detail">National University | CGPA: 3.34 | 2021-2022</div>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-degree">BBA in Accounting</div>
+                    <div class="edu-detail">National University | CGPA: 3.10 | 2017-2021</div>
+                </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem; color:#1a5d8f;"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-flex">
+                    <span class="cert-card"><i class="fas fa-graduation-cap"></i> Financial Accounting & Bookkeeping - Udemy (2025)</span>
+                    <span class="cert-card"><i class="fas fa-briefcase"></i> Employability Skills - Wadhwani Foundation (2025)</span>
+                    <span class="cert-card"><i class="fas fa-calculator"></i> Tally Prime - Bijoy IT & Co. (2025)</span>
+                    <span class="cert-card"><i class="fab fa-quickbooks"></i> QuickBooks Online - Professional Gyan (2026)</span>
+                    <span class="cert-card"><i class="fas fa-file-excel"></i> Microsoft Excel (Beginner to Adv) - Udemy (2025)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div style="background: white; border-radius: 1.8rem; padding: 2rem; text-align: center; border: 1px solid #e2edf5;">
+                <p style="font-size: 1.05rem; margin-bottom: 1rem;"><i class="fas fa-envelope-open-text"></i> Let's connect for finance transformation, import accounting, or ERP roles.</p>
+                <div style="display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap;">
+                    <a href="mailto:jahidul.mba.acc@gmail.com" style="text-decoration: none; color:#1a5d8f; font-weight: 600;"><i class="fas fa-envelope"></i> jahidul.mba.acc@gmail.com</a>
+                    <a href="tel:+8801948536831" style="text-decoration: none; color:#1a5d8f; font-weight: 600;"><i class="fas fa-phone"></i> +8801948-536831</a>
+                    <a href="https://www.linkedin.com/in/jahidulislam-accounting" target="_blank" style="text-decoration: none; color:#1a5d8f; font-weight: 600;"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                </div>
+                <hr style="margin: 1.5rem 0; border-color: #eef2f8;">
+                <p class="edu-detail"><i class="fas fa-clock"></i> Open to finance roles in Dhaka / hybrid / remote | Immediate availability</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Jahidul Islam — Accounting Executive | Accuracy, Automation & Integrity</p>
+            <div class="footer-links">
+                <a href="#home"><i class="fas fa-home"></i></a>
+                <a href="https://www.linkedin.com/in/jahidulislam-accounting" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:jahidul.mba.acc@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-img" id="modalImage" src="" alt="Full size screenshot">
+    </div>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('.nav-links a, .footer-links a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if(targetId && targetId !== "#" && targetId.startsWith('#')){
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement){
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Carousel functionality (2 items per page)
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('carouselDots');
+        
+        let currentPage = 0;
+        const itemsPerPage = 2;
+        const totalSlides = document.querySelectorAll('.project-card').length;
+        const totalPages = Math.ceil(totalSlides / itemsPerPage);
+
+        function getSlideWidth() {
+            const card = document.querySelector('.project-card');
+            if (!card) return 0;
+            const cardWidth = card.offsetWidth;
+            const gap = 28;
+            return cardWidth + gap;
+        }
+
+        function updateCarousel() {
+            const slideWidth = getSlideWidth();
+            const translateX = -(currentPage * itemsPerPage * slideWidth);
+            track.style.transform = `translateX(${translateX}px)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                if (index === currentPage) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (i === currentPage) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentPage = i;
+                    updateCarousel();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function nextSlide() {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentPage > 0) {
+                currentPage--;
+                updateCarousel();
+            }
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        window.addEventListener('resize', () => {
+            updateCarousel();
+        });
+
+        setTimeout(() => {
+            createDots();
+            updateCarousel();
+        }, 100);
+
+        // Lightbox for screenshots
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', (e) => {
+                e.stopPropagation();
+                modal.classList.add('active');
+                modalImg.src = thumb.src;
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
