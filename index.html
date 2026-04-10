@@ -20,6 +20,8 @@
             color: #1a2c3e;
             line-height: 1.5;
             scroll-behavior: smooth;
+            overflow-x: hidden;
+            max-width: 100%;
         }
 
         .container {
@@ -763,6 +765,7 @@
             font-size: 1.2rem;
         }
 
+        /* Responsive Design */
         @media (max-width: 900px) {
             .project-card {
                 flex: 0 0 100%;
@@ -803,7 +806,7 @@
             }
         }
 
-        /* Small screens - makes buttons even smaller to fit */
+        /* Extra small devices (phones, 480px and down) - IMPROVED MOBILE RESPONSIVENESS */
         @media (max-width: 550px) {
             .contact-buttons {
                 gap: 0.6rem;
@@ -812,6 +815,139 @@
             .btn-primary, .btn-outline {
                 padding: 0.4rem 0.9rem;
                 font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-title {
+                font-size: 1rem;
+            }
+            
+            .hero-desc {
+                font-size: 0.9rem;
+            }
+            
+            .hero-stats {
+                gap: 0.8rem;
+            }
+            
+            .stat-item {
+                gap: 8px;
+            }
+            
+            .stat-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+            }
+            
+            .stat-text {
+                font-size: 0.85rem;
+            }
+            
+            .stat-text small {
+                font-size: 0.65rem;
+            }
+            
+            .projects-carousel-container {
+                padding: 0 25px;
+            }
+            
+            .carousel-btn {
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+            
+            .carousel-btn.prev {
+                left: -8px;
+            }
+            
+            .carousel-btn.next {
+                right: -8px;
+            }
+            
+            .project-card {
+                padding: 1.2rem;
+            }
+            
+            .project-title {
+                font-size: 1rem;
+            }
+            
+            .project-desc {
+                font-size: 0.8rem;
+            }
+            
+            .project-list li {
+                font-size: 0.7rem;
+            }
+            
+            .tech-tag {
+                font-size: 0.6rem;
+                padding: 0.15rem 0.6rem;
+            }
+            
+            .gallery-thumb {
+                width: 55px;
+                height: 55px;
+            }
+            
+            .hero-contact-info {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .hero-contact-info p {
+                font-size: 0.7rem;
+            }
+            
+            .btn-project {
+                padding: 0.4rem 1rem;
+                font-size: 0.7rem;
+            }
+            
+            .exp-role {
+                font-size: 1.1rem;
+            }
+            
+            .exp-date {
+                font-size: 0.7rem;
+            }
+            
+            .exp-list li {
+                font-size: 0.8rem;
+            }
+            
+            .skill-cat h3 {
+                font-size: 1.1rem;
+            }
+            
+            .skill-tag {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.8rem;
+            }
+            
+            .edu-degree {
+                font-size: 0.9rem;
+            }
+            
+            .cert-card {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.8rem;
+            }
+            
+            footer {
+                font-size: 0.7rem;
+                padding: 1.5rem 0;
             }
         }
     </style>
@@ -846,7 +982,7 @@
                 </div>
                 <p class="hero-desc">I help businesses streamline financial operations, automate reconciliations, and turn complex transactional data into clear, actionable insights. Specialized in import/export accounting and Excel-based reporting systems.</p>
                 
-                <!-- Stats with Icons (Fixed) -->
+                <!-- Stats with Icons -->
                 <div class="hero-stats">
                     <div class="stat-item">
                         <div class="stat-icon"><i class="fas fa-file-excel"></i></div>
@@ -862,7 +998,7 @@
                     </div>
                 </div>
                 
-                <!-- 4 Buttons - Email Me, LinkedIn, View Projects, Download CV -->
+                <!-- 4 Buttons -->
                 <div class="contact-buttons">
                     <a href="mailto:jahidul.mba.acc@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
                     <a href="https://www.linkedin.com/in/jahidulislam-accounting" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -957,6 +1093,7 @@
                                 <div class="gallery-images">
                                     <img src="project1.jpg" class="gallery-thumb" alt="Screenshot 1">
                                     <img src="project1.1.jpg" class="gallery-thumb" alt="Screenshot 2">
+                                    
                                 </div>
                             </div>
                             <a href="https://docs.google.com/spreadsheets/d/1mkBY40_TznqT4L7u9u2N_CEDTN6IxbtCRjbEgYzY1Rc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
@@ -986,7 +1123,7 @@
                                 <div class="gallery-images">
                                     <img src="project2.png" class="gallery-thumb" alt="Screenshot 1">
                                     <img src="Project 2.1.png" class="gallery-thumb" alt="Screenshot 2">
-                                    <img src="Project2.2.png" class="gallery-thumb" alt="Screenshot 3">
+                                    <img src="Project2.2.png" class="gallery-thumb" alt="Screenshot 2">
                                 </div>
                             </div>
                             <a href="https://docs.google.com/spreadsheets/d/1ICMe1abg0HQBMGs9bF4iCvK00ykFzM6zwBn0tF55ipc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
@@ -1074,6 +1211,7 @@
                                 <div class="gallery-title"><i class="fas fa-images"></i> Project Screenshots</div>
                                 <div class="gallery-images">
                                     <img src="project5.png" class="gallery-thumb" alt="Screenshot 1">
+                                    
                                 </div>
                             </div>
                             <a href="https://docs.google.com/spreadsheets/d/1bU4lSAVvu_YGQd33YiRXL3FSIMDT-G9tDpbejDQxjEg/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Full Report</a>
