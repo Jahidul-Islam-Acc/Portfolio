@@ -58,6 +58,7 @@
             letter-spacing: -0.3px;
         }
 
+        /* Desktop Navigation */
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -74,6 +75,78 @@
 
         .nav-links a:hover {
             color: #0f7bc2;
+        }
+
+        /* Hamburger Menu Button - Hidden on Desktop */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #1a5d8f;
+            transition: 0.2s;
+            z-index: 101;
+        }
+
+        .hamburger:hover {
+            color: #0f4570;
+        }
+
+        /* Mobile Navigation Styles */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 280px;
+                height: 100vh;
+                background: white;
+                box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                transition: right 0.3s ease-in-out;
+                z-index: 100;
+                padding: 2rem 1rem;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 0.8rem;
+                font-size: 1.1rem;
+            }
+
+            /* Overlay when menu is open */
+            .menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 99;
+                display: none;
+            }
+
+            .menu-overlay.active {
+                display: block;
+            }
         }
 
         /* Enhanced Hero Section */
@@ -776,10 +849,6 @@
         }
 
         @media (max-width: 780px) {
-            .nav-flex {
-                flex-direction: column;
-                gap: 0.8rem;
-            }
             .hero-content h1 {
                 font-size: 2.2rem;
             }
@@ -958,7 +1027,11 @@
             <div class="logo">
                 <h1>Jahidul Islam</h1>
             </div>
-            <ul class="nav-links">
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -968,6 +1041,8 @@
             </ul>
         </div>
     </nav>
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -1335,9 +1410,40 @@
                     const targetElement = document.querySelector(targetId);
                     if(targetElement){
                         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Close mobile menu after clicking
+                        document.getElementById('navLinks').classList.remove('active');
+                        document.getElementById('menuOverlay').classList.remove('active');
+                        document.querySelector('.hamburger i').classList.remove('fa-times');
+                        document.querySelector('.hamburger i').classList.add('fa-bars');
                     }
                 }
             });
+        });
+
+        // Hamburger Menu Functionality
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.getElementById('navLinks');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const hamburgerIcon = hamburgerBtn.querySelector('i');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-times');
+            } else {
+                hamburgerIcon.classList.remove('fa-times');
+                hamburgerIcon.classList.add('fa-bars');
+            }
+        });
+
+        menuOverlay.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            hamburgerIcon.classList.remove('fa-times');
+            hamburgerIcon.classList.add('fa-bars');
         });
 
         // Carousel functionality (2 items per page)
