@@ -643,6 +643,7 @@
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
+            margin-bottom: 0.5rem;
         }
 
         .gallery-thumb {
@@ -800,7 +801,6 @@
         @media (max-width: 550px) {
             .contact-buttons { gap: 0.4rem; }
             .btn-primary, .btn-outline { padding: 0.35rem 0.9rem; font-size: 0.65rem; }
-            .hero-stats { flex-direction: column; gap: 0.5rem; }
         }
 
         @media (max-width: 480px) {
@@ -878,11 +878,11 @@
                 <div class="exp-header"><span class="exp-role">Accounting Executive</span><span class="exp-date">Oct 2025 – Present</span></div>
                 <div class="exp-company">BanglaDrop (Sister of Steadfast Courier Ltd.) – Dhaka</div>
                 <ul class="exp-list">
-                    <li><i class="fas fa-check-circle"></i>Manage end-to-end financials for <strong>6–7 import shipments/month</strong>, including supplier payments, freight, and cost allocation.</li>
-                    <li><i class="fas fa-check-circle"></i>Process <strong>multi-currency (USD/CNY)</strong> supplier payments, freight settlements, and import expenses with precision.</li>
-                    <li><i class="fas fa-check-circle"></i>Reconcile <strong>6 financial channels</strong> (Dutch-Bangla Bank, City Bank, Bank of China, Zhejiang Chouzhou Commercial Bank, bKash & Nagad) monthly.</li>
-                    <li><i class="fas fa-check-circle"></i>Handle daily transactions of <strong>BDT 500k – 3.5M</strong>, ensuring 100% posting accuracy and ledger integrity.</li>
-                    <li><i class="fas fa-check-circle"></i>Prepare shipment-wise cost sheets, accurately allocating freight, duty, and logistics costs before invoicing.</li>
+                    <li><i class="fas fa-check-circle"></i> Manage end-to-end financials for <strong>6–7 import shipments/month</strong>, including supplier payments, freight, and cost allocation.</li>
+                    <li><i class="fas fa-check-circle"></i> Process <strong>multi-currency (USD/CNY)</strong> supplier payments, freight settlements, and import expenses with precision.</li>
+                    <li><i class="fas fa-check-circle"></i> Reconcile <strong>6 financial channels</strong> (Dutch-Bangla Bank, City Bank, Bank of China, Zhejiang Chouzhou Commercial Bank, bKash & Nagad) monthly.</li>
+                    <li><i class="fas fa-check-circle"></i> Handle daily transactions of <strong>BDT 500k – 3.5M</strong>, ensuring 100% posting accuracy and ledger integrity.</li>
+                    <li><i class="fas fa-check-circle"></i> Prepare shipment-wise cost sheets, accurately allocating freight, duty, and logistics costs before invoicing.</li>
                 </ul>
                 <div class="achievement-badge"><i class="fas fa-trophy"></i> Selected for internal transfer based on strong performance</div>
                 <details><summary><i class="fas fa-chevron-down"></i> Additional responsibilities</summary>
@@ -904,188 +904,154 @@
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Projects Section - FULLY FIXED CAROUSEL -->
         <section id="projects">
             <h2 class="section-title">Key Projects</h2>
             <div class="projects-carousel-container">
                 <div class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></div>
                 <div class="carousel-wrapper">
                     <div class="carousel-track" id="carouselTrack">
+                        
                         <!-- Project 1 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-chart-line"></i></div><h3 class="project-title">Dynamic Sales Performance & Profitability Dashboard</h3><p class="project-desc"><strong>Problem:</strong> Hard to track profit across multi-currency (BDT/RMB) sales.</p><p class="project-desc"><strong>Solution:</strong> Built Excel system linking client payments, supplier costs, and performance.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Reduced reconciliation time by 40%</span><div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Profit Calculation</span><span class="tech-tag">Reporting</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Improved profit accuracy across multi-currency (BDT & RMB) transactions</li>
-<li><i class="fas fa-check-circle"></i> Enabled structured tracking of revenue, cost, and profit margins</li>
-<li><i class="fas fa-check-circle"></i> Reduced reconciliation errors through organized transaction matching</li>
-<li><i class="fas fa-check-circle"></i> Identified top-performing salespersons based on revenue collection</li>
-<li><i class="fas fa-check-circle"></i> Delivered actionable insights to support faster financial decision-making</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-        <img src="firstone.jpg" class="gallery-thumb" alt="Screenshot 1">
-        <img src="firsttwo.jpg" class="gallery-thumb" alt="Screenshot 2">
-     	<img src="ClientDashboard.jpg" class="gallery-thumb" alt="Screenshot 2">
-    </div>
-
-    <a 
-        href="https://docs.google.com/spreadsheets/d/1fuXb2QvlHiqlZAYnUkYiG7aYr_IZ67jV/edit?usp=sharing" 
-        class="btn-project" 
-        target="_blank"
-    >
-        <i class="fas fa-file-alt"></i> View Report
-    </a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="project-title">Dynamic Sales Performance & Profitability Dashboard</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Hard to track profit across multi-currency (BDT/RMB) sales.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Built Excel system linking client payments, supplier costs, and performance.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Reduced reconciliation time by 40%</span>
+                            <div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Profit Calculation</span><span class="tech-tag">Reporting</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Improved profit accuracy across multi-currency (BDT & RMB) transactions</li>
+                                <li><i class="fas fa-check-circle"></i> Enabled structured tracking of revenue, cost, and profit margins</li>
+                                <li><i class="fas fa-check-circle"></i> Delivered actionable insights to support faster financial decision-making</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="firstone.jpg" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="firsttwo.jpg" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="ClientDashboard.jpg" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1fuXb2QvlHiqlZAYnUkYiG7aYr_IZ67jV/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                         <!-- Project 2 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-boxes"></i></div><h3 class="project-title">Multi-Currency Vendor Reconciliation</h3><p class="project-desc"><strong>Problem:</strong> Vendor billing in USD/RMB/BDT caused reconciliation delays.</p><p class="project-desc"><strong>Solution:</strong> Built structured system to track invoices and payments in all currencies.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved billing accuracy and enabled clear visibility of payments and outstanding amounts.</span><div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Currency Conversion</span><span class="tech-tag">Balance Tracking</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Managed vendor billing across USD, RMB, and BDT transactions</li>
-<li><i class="fas fa-check-circle"></i> Enabled accurate tracking of total bill, payments, and outstanding balances</li>
-<li><i class="fas fa-check-circle"></i> Reduced reconciliation errors through structured transaction matching</li>
-<li><i class="fas fa-check-circle"></i> Provided monthly and shipment-wise analysis for better financial control</li>
-<li><i class="fas fa-check-circle"></i> Delivered insights to support faster and more informed decision-making</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-          <img src="Twoofirst.jpg" class="gallery-thumb" alt="Screenshot 1">
-          <img src="Twoosecond.png" class="gallery-thumb" alt="Screenshot 2">
-          <img src="Twoothird.png" class="gallery-thumb" alt="Screenshot 2">
-    </div>
-</div>
-
-<a 
-    href="https://docs.google.com/spreadsheets/d/1lexcjus2u2Qs5ULZlPhB5UUmC3CCipjm/edit?usp=sharing" 
-    class="btn-project" 
-    target="_blank"
->
-    <i class="fas fa-file-alt"></i> View Report
-</a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-boxes"></i></div>
+                            <h3 class="project-title">Multi-Currency Vendor Reconciliation</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Vendor billing in USD/RMB/BDT caused reconciliation delays.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Built structured system to track invoices and payments in all currencies.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved billing accuracy and enabled clear visibility of payments</span>
+                            <div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Currency Conversion</span><span class="tech-tag">Balance Tracking</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Managed vendor billing across USD, RMB, and BDT transactions</li>
+                                <li><i class="fas fa-check-circle"></i> Enabled accurate tracking of total bill, payments, and outstanding balances</li>
+                                <li><i class="fas fa-check-circle"></i> Delivered insights to support faster and more informed decision-making</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="Twoofirst.jpg" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="Twoosecond.png" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="Twoothird.png" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1lexcjus2u2Qs5ULZlPhB5UUmC3CCipjm/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                         <!-- Project 3 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-users"></i></div><h3 class="project-title">Payroll & Attendance Automation</h3><p class="project-desc"><strong>Problem:</strong> Manual payroll was time-consuming and error-prone.</p><p class="project-desc"><strong>Solution:</strong> Built Excel system with pivot tables for salary calculation.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Reduced payroll processing time by 60%</span><div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Pivot Tables</span><span class="tech-tag">Payroll Automation</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Automated employee attendance tracking with daily records</li>
-<li><i class="fas fa-check-circle"></i> Calculated working days, leave, and attendance summary</li>
-<li><i class="fas fa-check-circle"></i> Streamlined payroll calculation including overtime and deductions</li>
-<li><i class="fas fa-check-circle"></i> Reduced manual errors through structured data processing</li>
-<li><i class="fas fa-check-circle"></i> Improved efficiency in monthly salary preparation</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-         <img src="project3.png" class="gallery-thumb" alt="Screenshot 1">
-         <img src="project3.1.png" class="gallery-thumb" alt="Screenshot 2">
-         <img src="project3.2.png" class="gallery-thumb" alt="Screenshot 3">
-    </div>
-</div>
-
-<a 
-    href="https://docs.google.com/spreadsheets/d/1BLYT8Oh89YGexpHsn19JYqfUGlBMj01_blh8ZMgM2Wc/edit?usp=sharing" 
-    class="btn-project" 
-    target="_blank"
->
-    <i class="fas fa-file-alt"></i> View Report
-</a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-users"></i></div>
+                            <h3 class="project-title">Payroll & Attendance Automation</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Manual payroll was time-consuming and error-prone.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Built Excel system with pivot tables for salary calculation.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Reduced payroll processing time by 60%</span>
+                            <div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Pivot Tables</span><span class="tech-tag">Payroll Automation</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Automated employee attendance tracking with daily records</li>
+                                <li><i class="fas fa-check-circle"></i> Streamlined payroll calculation including overtime and deductions</li>
+                                <li><i class="fas fa-check-circle"></i> Improved efficiency in monthly salary preparation</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="project3.png" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="project3.1.png" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="project3.2.png" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1BLYT8Oh89YGexpHsn19JYqfUGlBMj01_blh8ZMgM2Wc/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                         <!-- Project 4 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-hand-holding-usd"></i></div><h3 class="project-title">Inventory & Stock Management</h3><p class="project-desc"><strong>Problem:</strong> No real-time view of stock levels.</p><p class="project-desc"><strong>Solution:</strong> Built tracker for purchases, issues, and reorder alerts.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved inventory control and enabled timely identification of low-stock items.</span><div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Stock Monitoring</span><span class="tech-tag">Reorder Alerts</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Tracked product inflow and outflow across multiple inventory items</li>
-<li><i class="fas fa-check-circle"></i> Calculated real-time stock levels using structured data</li>
-<li><i class="fas fa-check-circle"></i> Implemented reorder level alerts for low-stock items</li>
-<li><i class="fas fa-check-circle"></i> Reduced stock tracking errors through automated calculations</li>
-<li><i class="fas fa-check-circle"></i> Improved inventory visibility for better operational control</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-           <img src="project4.png" class="gallery-thumb" alt="Screenshot 1">
-           <img src="project4.1.png" class="gallery-thumb" alt="Screenshot 2">
-    </div>
-</div>
-
-<a 
-    href="https://docs.google.com/spreadsheets/d/1-6cAo0xhKKUAkKxktmz84TnMR8Ejf1dkh4RfRJF7u4A/edit?usp=sharing" 
-    class="btn-project" 
-    target="_blank"
->
-    <i class="fas fa-file-alt"></i> View Report
-</a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <h3 class="project-title">Inventory & Stock Management</h3>
+                            <p class="project-desc"><strong>Problem:</strong> No real-time view of stock levels.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Built tracker for purchases, issues, and reorder alerts.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved inventory control and enabled timely identification of low-stock items</span>
+                            <div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Stock Monitoring</span><span class="tech-tag">Reorder Alerts</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Tracked product inflow and outflow across multiple inventory items</li>
+                                <li><i class="fas fa-check-circle"></i> Implemented reorder level alerts for low-stock items</li>
+                                <li><i class="fas fa-check-circle"></i> Improved inventory visibility for better operational control</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="project4.png" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="project4.1.png" class="gallery-thumb" alt="Screenshot 2">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1-6cAo0xhKKUAkKxktmz84TnMR8Ejf1dkh4RfRJF7u4A/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                         <!-- Project 5 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-truck"></i></div><h3 class="project-title">Client Billing & Shipment Analysis</h3><p class="project-desc"><strong>Problem:</strong> Client billing and shipment data disconnected.</p><p class="project-desc"><strong>Solution:</strong> Built system to track shipments and generate billing summaries.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved billing accuracy by 30%</span><div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Client Billing</span><span class="tech-tag">Shipment Tracking</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Monitored shipment data including tracking ID, item type, weight (kg), and CBM</li>
-<li><i class="fas fa-check-circle"></i> Managed client-wise product distribution and shipment records</li>
-<li><i class="fas fa-check-circle"></i> Calculated billing based on rates, quantity, and shipment details</li>
-<li><i class="fas fa-check-circle"></i> Generated client-wise totals and overall financial summaries</li>
-<li><i class="fas fa-check-circle"></i> Structured operational and financial data for reporting and decision-making</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-        <img src="project5.png" class="gallery-thumb" alt="Screenshot 1">
-    </div>
-</div>
-
-<a 
-    href="https://docs.google.com/spreadsheets/d/1bU4lSAVvu_YGQd33YiRXL3FSIMDT-G9tDpbejDQxjEg/edit?usp=sharing" 
-    class="btn-project" 
-    target="_blank"
->
-    <i class="fas fa-file-alt"></i> View Report
-</a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-truck"></i></div>
+                            <h3 class="project-title">Client Billing & Shipment Analysis</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Client billing and shipment data disconnected.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Built system to track shipments and generate billing summaries.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Improved billing accuracy by 30%</span>
+                            <div class="project-tech"><span class="tech-tag">Excel</span><span class="tech-tag">Client Billing</span><span class="tech-tag">Shipment Tracking</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Monitored shipment data including tracking ID, item type, weight (kg), and CBM</li>
+                                <li><i class="fas fa-check-circle"></i> Calculated billing based on rates, quantity, and shipment details</li>
+                                <li><i class="fas fa-check-circle"></i> Generated client-wise totals and overall financial summaries</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="project5.png" class="gallery-thumb" alt="Screenshot 1">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1bU4lSAVvu_YGQd33YiRXL3FSIMDT-G9tDpbejDQxjEg/edit?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                         <!-- Project 6 -->
-                        <div class="project-card"><div class="project-icon"><i class="fas fa-calculator"></i></div><h3 class="project-title">Tally Prime Financial Reporting</h3><p class="project-desc"><strong>Problem:</strong> Practiced generating accurate financial reports from raw transaction data.</p><p class="project-desc"><strong>Solution:</strong> Created structured reports including P&L, Balance Sheet, and Trial Balance using Tally Prime.</p><span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Developed practical understanding of financial reporting and accounting workflows.</span><div class="project-tech"><span class="tech-tag">Tally Prime</span><span class="tech-tag">Reporting</span><span class="tech-tag">Reconciliation</span></div>
-<ul class="project-list">
-<li><i class="fas fa-check-circle"></i> Practiced preparation of trial balance and ledger management</li>
-<li><i class="fas fa-check-circle"></i> Generated P&L and Balance Sheet using structured transaction data</li>
-<li><i class="fas fa-check-circle"></i> Built understanding of financial reporting and reconciliation processes</li>
-<li><i class="fas fa-check-circle"></i> Applied accounting concepts to simulate real business scenarios</li>
-<li><i class="fas fa-check-circle"></i> Improved hands-on skills in Tally Prime financial reporting</li>
-</ul>
-<div class="screenshot-gallery">
-    <div class="gallery-title">
-        <i class="fas fa-images"></i> Screenshots
-    </div>
-
-    <div class="gallery-images">
-         <img src="sixthone.jpg" class="gallery-thumb" alt="Screenshot 1">
-         <img src="sixthtwo.jpg" class="gallery-thumb" alt="Screenshot 2">
-         <img src="sixththree.jpg" class="gallery-thumb" alt="Screenshot 3">
-    </div>
-</div>
-
-<a 
-    href="https://drive.google.com/drive/folders/1_xeJ-JNKz0vIHo04M5anlrRJdONxPVey?usp=sharing" 
-    class="btn-project" 
-    target="_blank"
->
-    <i class="fas fa-file-alt"></i> View Report
-</a>
-</div>
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                            <h3 class="project-title">Tally Prime Financial Reporting</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Practiced generating accurate financial reports from raw transaction data.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Created structured reports including P&L, Balance Sheet, and Trial Balance using Tally Prime.</p>
+                            <span class="business-impact"><i class="fas fa-chart-simple"></i> Impact: Developed practical understanding of financial reporting and accounting workflows</span>
+                            <div class="project-tech"><span class="tech-tag">Tally Prime</span><span class="tech-tag">Reporting</span><span class="tech-tag">Reconciliation</span></div>
+                            <ul class="project-list">
+                                <li><i class="fas fa-check-circle"></i> Practiced preparation of trial balance and ledger management</li>
+                                <li><i class="fas fa-check-circle"></i> Generated P&L and Balance Sheet using structured transaction data</li>
+                                <li><i class="fas fa-check-circle"></i> Improved hands-on skills in Tally Prime financial reporting</li>
+                            </ul>
+                            <div class="screenshot-gallery">
+                                <div class="gallery-title"><i class="fas fa-images"></i> Screenshots</div>
+                                <div class="gallery-images">
+                                    <img src="sixthone.jpg" class="gallery-thumb" alt="Screenshot 1">
+                                    <img src="sixthtwo.jpg" class="gallery-thumb" alt="Screenshot 2">
+                                    <img src="sixththree.jpg" class="gallery-thumb" alt="Screenshot 3">
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1_xeJ-JNKz0vIHo04M5anlrRJdONxPVey?usp=sharing" class="btn-project" target="_blank"><i class="fas fa-file-alt"></i> View Report</a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -1116,30 +1082,21 @@
             </div>
         </section>
 
-         <!-- Education & Certifications -->
+        <!-- Education & Certifications -->
         <section id="education">
             <h2 class="section-title">Education & Certifications</h2>
             <div class="edu-item">
-                <div>
-                    <div class="edu-degree">MBA in Accounting</div>
-                    <div class="edu-detail">National University | CGPA: 3.34 | 2021-2022</div>
-                </div>
+                <div><div class="edu-degree">MBA in Accounting</div><div class="edu-detail">National University | CGPA: 3.34 | 2021-2022</div></div>
             </div>
             <div class="edu-item">
-                <div>
-                    <div class="edu-degree">BBA in Accounting</div>
-                    <div class="edu-detail">National University | CGPA: 3.10 | 2017-2021</div>
-                </div>
+                <div><div class="edu-degree">BBA in Accounting</div><div class="edu-detail">National University | CGPA: 3.10 | 2017-2021</div></div>
             </div>
-            <div style="margin-top: 1.5rem;">
-                <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem; color:#1a5d8f;"><i class="fas fa-certificate"></i> Certifications</h3>
-                <div class="certs-flex">
-                    <span class="cert-card"><i class="fas fa-graduation-cap"></i> Financial Accounting & Bookkeeping - Udemy (2025)</span>
-                    <span class="cert-card"><i class="fas fa-briefcase"></i> Employability Skills - Wadhwani Foundation (2025)</span>
-                    <span class="cert-card"><i class="fas fa-calculator"></i> Tally Prime - Bijoy IT & Co. (2025)</span>
-                    <span class="cert-card"><i class="fab fa-quickbooks"></i> QuickBooks Online - Professional Gyan (2026)</span>
-                    <span class="cert-card"><i class="fas fa-file-excel"></i> Microsoft Excel (Beginner to Adv) - Udemy (2025)</span>
-                </div>
+            <div class="certs-flex">
+                <span class="cert-card"><i class="fas fa-graduation-cap"></i> Financial Accounting & Bookkeeping - Udemy (2025)</span>
+                <span class="cert-card"><i class="fas fa-briefcase"></i> Employability Skills - Wadhwani Foundation (2025)</span>
+                <span class="cert-card"><i class="fas fa-calculator"></i> Tally Prime - Bijoy IT & Co. (2025)</span>
+                <span class="cert-card"><i class="fab fa-quickbooks"></i> QuickBooks Online - Professional Gyan (2026)</span>
+                <span class="cert-card"><i class="fas fa-file-excel"></i> Microsoft Excel (Beginner to Adv) - Udemy (2025)</span>
             </div>
         </section>
 
@@ -1186,6 +1143,7 @@
                 }
             });
         });
+        
         const hamburgerBtn = document.getElementById('hamburgerBtn');
         const navLinks = document.getElementById('navLinks');
         const menuOverlay = document.getElementById('menuOverlay');
@@ -1206,28 +1164,65 @@
                 if(icon){ icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); }
             });
         }
-        // Carousel
+        
+        // Carousel - FIXED
         const track = document.getElementById('carouselTrack');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const dotsContainer = document.getElementById('carouselDots');
+        
         if(track && prevBtn && nextBtn && dotsContainer){
-            let currentPage = 0, itemsPerPage = 2, totalSlides = document.querySelectorAll('.project-card').length, totalPages = Math.ceil(totalSlides / itemsPerPage);
-            function getSlideWidth(){ const card = document.querySelector('.project-card'); if(!card) return 0; return card.offsetWidth + 20; }
-            function updateCarousel(){ const w = getSlideWidth(); track.style.transform = `translateX(-${currentPage * itemsPerPage * w}px)`; updateDots(); }
-            function updateDots(){ document.querySelectorAll('.dot').forEach((d,i)=>{ if(i===currentPage) d.classList.add('active'); else d.classList.remove('active'); }); }
-            function createDots(){ dotsContainer.innerHTML=''; for(let i=0;i<totalPages;i++){ const d=document.createElement('div'); d.classList.add('dot'); if(i===currentPage) d.classList.add('active'); d.addEventListener('click',()=>{ currentPage=i; updateCarousel(); }); dotsContainer.appendChild(d); } }
-            nextBtn.addEventListener('click',()=>{ if(currentPage<totalPages-1){ currentPage++; updateCarousel(); } });
-            prevBtn.addEventListener('click',()=>{ if(currentPage>0){ currentPage--; updateCarousel(); } });
+            let currentPage = 0;
+            const itemsPerPage = 2;
+            const totalSlides = document.querySelectorAll('.project-card').length;
+            const totalPages = Math.ceil(totalSlides / itemsPerPage);
+            
+            function getSlideWidth(){ 
+                const card = document.querySelector('.project-card'); 
+                if(!card) return 0; 
+                return card.offsetWidth + 19.2; // gap is 1.2rem = 19.2px
+            }
+            
+            function updateCarousel(){ 
+                const w = getSlideWidth(); 
+                track.style.transform = `translateX(-${currentPage * itemsPerPage * w}px)`; 
+                updateDots(); 
+            }
+            
+            function updateDots(){ 
+                document.querySelectorAll('.dot').forEach((d,i)=>{ 
+                    if(i === currentPage) d.classList.add('active'); 
+                    else d.classList.remove('active'); 
+                }); 
+            }
+            
+            function createDots(){ 
+                dotsContainer.innerHTML=''; 
+                for(let i=0;i<totalPages;i++){ 
+                    const d=document.createElement('div'); 
+                    d.classList.add('dot'); 
+                    if(i === currentPage) d.classList.add('active'); 
+                    d.addEventListener('click',()=>{ currentPage=i; updateCarousel(); }); 
+                    dotsContainer.appendChild(d); 
+                } 
+            }
+            
+            nextBtn.addEventListener('click',()=>{ if(currentPage < totalPages-1){ currentPage++; updateCarousel(); } });
+            prevBtn.addEventListener('click',()=>{ if(currentPage > 0){ currentPage--; updateCarousel(); } });
             window.addEventListener('resize',()=>updateCarousel());
             setTimeout(()=>{ createDots(); updateCarousel(); },100);
         }
+        
         // Lightbox
-        const modal = document.getElementById('imageModal'), modalImg = document.getElementById('modalImage'), closeModal = document.querySelector('.close-modal');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close-modal');
         if(modal && modalImg && closeModal){
-            document.querySelectorAll('.gallery-thumb').forEach(t=>{ t.addEventListener('click',(e)=>{ e.stopPropagation(); modal.classList.add('active'); modalImg.src=t.src; }); });
+            document.querySelectorAll('.gallery-thumb').forEach(t=>{ 
+                t.addEventListener('click',(e)=>{ e.stopPropagation(); modal.classList.add('active'); modalImg.src=t.src; }); 
+            });
             closeModal.addEventListener('click',()=>modal.classList.remove('active'));
-            modal.addEventListener('click',(e)=>{ if(e.target===modal) modal.classList.remove('active'); });
+            modal.addEventListener('click',(e)=>{ if(e.target === modal) modal.classList.remove('active'); });
         }
     </script>
 </body>
